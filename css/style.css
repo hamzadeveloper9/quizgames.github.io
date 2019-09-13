@@ -80,3 +80,13 @@ section h1{
 	font-size: 0.8rem;
 	text-transform: uppercase;
 }
+.credit{
+	margin: 10px 0;
+	text-transform: capitalize;
+	letter-spacing: 0.8px;
+}
+.credit1{
+	margin:0;
+	text-transform: capitalize;
+	letter-spacing: 0.8px;
+}
