@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>All Math Quiz Questions | Hamza Malik</title>
+</head>
+
+<body>
+    <section>
+        <h1>Math Addion Quiz Game:)</h1>
+        <div class="centerdiv">
+            <div class="insertBox">
+                <div class="box1">
+                    <input type="text" id="v1">
+                </div>
+                <div class="box1">
+                    <p>+</p>
+                </div>
+                <div class="box1">
+                    <input type="text" id="v2">
+                </div>
+            </div>
+            <div class="middleBox">
+                <input type="text" id="answer">
+            </div>
+            <div class="sentBox">
+                <button onclick="jsGames()">Check Answer</button>
+            </div>
+		</div>
+		<hr>
+		<p class="credit">&copy; Copyright 2019 - 2020 | All Right Reversed</p>
+		<p class="credit1">Made with &#10084; By Hamza Malik</p>
+		
+    </section>
+</body>
+    <script>
+    let n1 = Math.floor(Math.random()*10+1);
+    let n2 = Math.floor(Math.random()*10+1);
+
+    document.getElementById('v1').value = n1;
+    document.getElementById('v2').value = n2;
+
+    let ans = n1 + n2;
+
+    const jsGames = () =>{
+        var usera = document.getElementById('answer').value;
+
+        if(usera == ans){
+            alert('Well done! Your answer is correct');
+        }else{
+            alert('Correct Answer is ' + ans + '. Try Again!');
+        }
+
+        var usera = document.getElementById('answer').value = "";
+    n1 = Math.floor(Math.random()*10+1);
+    n2 = Math.floor(Math.random()*10+1);
+
+        document.getElementById('v1').value = n1;
+        document.getElementById('v2').value = n2;
+
+     ans = n1 + n2;
+    }
+    
+
+    </script>
+</html>
